@@ -40,7 +40,7 @@
     "react": "^16.13.1",
     "react-app-polyfill": "^1.0.6",
     "react-dom": "^16.13.1",
-    "react-micro-frontend-framework": "^0.0.5",
+    "react-micro-frontend-framework": "^0.0.7",
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.2.0",
     "redux": "^4.0.5",
@@ -50,6 +50,6 @@
     "rxjs": "^6.5.5"
   },
   "devDependencies": {
-    "react-micro-frontend-scripts": "^1.0.6"
+    "react-micro-frontend-scripts": "^1.0.7"
   }
 }
