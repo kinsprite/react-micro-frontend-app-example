@@ -1,5 +1,4 @@
 const scripts = require('react-micro-frontend-scripts');
-const helper = require('./helper');
 
 function build() {
   // --- ENV for 'production' only ---
@@ -11,10 +10,13 @@ function build() {
   // --- ENV for ALL ---
   // process.env.IMAGE_INLINE_SIZE_LIMIT = '1000';
   // process.env.REACT_MICRO_FRONTEND_SHORT = 'rmf';
-  // process.env.SPLIT_CHUNKS = 'true';
-  // process.env.RUNTIME_CHUNK = 'true';
+  process.env.SPLIT_CHUNKS = 'false';
+  process.env.RUNTIME_CHUNK = 'false';
 
-  scripts.runWebpack(scripts.envProduction, helper.runWebpackConfigCallback);
+  scripts.runWebpack(scripts.envProduction, (config) => ({
+    ...config,
+    externals: scripts.helper.getExternalsOptions(),
+  }));
 }
 
 build();

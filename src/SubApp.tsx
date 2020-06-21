@@ -7,7 +7,6 @@ function SubApp() : JSX.Element {
     <div className={styles.container}>
       <a
         href="/"
-        target="_blank"
         rel="noopener noreferrer"
       >
         Goto Home
