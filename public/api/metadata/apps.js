@@ -12,11 +12,12 @@
         // '/rmf-app-example/658c5f91/app-example-b889c22.js'
       ],
       routes: ['/app-example'],
+      render: 'root',
     },
   ];
 
   var extra = {
-    defaultRoute: '/home',
+    defaultRoute: '/app-example',
   };
 
   if (callback) callback(apps, extra);
