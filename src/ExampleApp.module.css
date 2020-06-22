@@ -3,3 +3,9 @@
   color: #822;
   background-color: burlywood;
 }
+
+.linkList {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+}

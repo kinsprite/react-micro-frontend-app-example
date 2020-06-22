@@ -4,7 +4,7 @@ import { combineEpics } from 'redux-observable';
 import { all } from 'redux-saga/effects';
 import { registerApp } from 'react-micro-frontend-framework';
 
-import SubApp from './SubApp';
+import ExampleApp from './ExampleApp';
 
 import {
   counterReducer,
@@ -27,7 +27,7 @@ const appEpics = [
 ];
 
 registerApp('app-example', {
-  component: SubApp,
+  component: ExampleApp,
   reducer: combineReducers(appReducers),
   saga: appSagas,
   epic: combineEpics(...appEpics),
