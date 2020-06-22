@@ -50,6 +50,6 @@
     "rxjs": "^6.5.5"
   },
   "devDependencies": {
-    "react-micro-frontend-scripts": "^1.1.0"
+    "react-micro-frontend-scripts": "^1.2.0"
   }
 }
