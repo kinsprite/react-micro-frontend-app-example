@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "React micro frontend app-example",
   "main": "index.js",
+  "module": "src/index.ts",
   "types": "src/index.ts",
   "repository": "https://github.com/kinsprite/react-micro-frontend-app-example",
   "author": "kinsprite",
