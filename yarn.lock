@@ -6107,10 +6107,10 @@ react-is@^16.12.0, react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1, react-i
   resolved "https://registry.npm.taobao.org/react-is/download/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha1-eJcppNw23imZ3BVt1sHZwYzqVqQ=
 
-react-micro-frontend-framework@^0.0.8:
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/react-micro-frontend-framework/-/react-micro-frontend-framework-0.0.8.tgz#86acf47b7e3501efaaad64e4dd35037373eac9cd"
-  integrity sha512-jJ9umOSsngfJFY0Me2YChromv5rphzoOLYzI9A0yRHTnBgq0N9o6ieuY74xkU0UIcaC/fLgfr10fTidbhk9ppA==
+react-micro-frontend-framework@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/react-micro-frontend-framework/-/react-micro-frontend-framework-0.1.0.tgz#96607882cf36d6ebadb0775bb150d185c8bd1d17"
+  integrity sha512-pOvr6twFZSXtou6nn0MgTtzbWMv5yDr/Ptik7KPHe+tPAsAQeLqdSuArfd8db96M2c8cze51PfcU4Z0xcs/BlA==
   dependencies:
     "@types/jest" "^26.0.0"
     "@types/node" "^12.0.0"

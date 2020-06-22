@@ -1,6 +1,7 @@
 import React from 'react';
 
 import styles from './subApp.module.css';
+import { CounterContainer } from './counter';
 
 function SubApp() : JSX.Element {
   return (
@@ -12,6 +13,7 @@ function SubApp() : JSX.Element {
         Goto Home
       </a>
       <div>This is App Example.</div>
+      <CounterContainer />
     </div>
   );
 }

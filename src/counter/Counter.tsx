@@ -12,7 +12,7 @@ interface CounterProps {
   onIncrementEpic: CounterActionCreator,
 }
 
-const Counter : React.FC<CounterProps> = ({
+const Counter : React.FC<any> = ({
   counter, onIncrement, onIncrementAsync, onDecrement, onIncrementIfOdd, onIncrementThunk, onIncrementEpic,
 }: CounterProps) => (
   <p>

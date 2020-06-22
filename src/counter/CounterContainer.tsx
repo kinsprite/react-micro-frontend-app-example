@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 
 import {
-  onRest, onIncrement, onDecrement, onIncrementIfOdd, onIncrementAsync, onIncrementThunk,
+  onRest, onIncrement, onDecrement, onIncrementIfOdd, onIncrementAsync, onIncrementThunk, onIncrementEpic,
 } from './actionCreators';
 import Counter from './Counter';
 
@@ -10,7 +10,7 @@ const mapStateToProps = (state /* , ownProps */) => ({
 });
 
 const mapDispatchToProps = {
-  onRest, onIncrement, onDecrement, onIncrementIfOdd, onIncrementAsync, onIncrementThunk,
+  onRest, onIncrement, onDecrement, onIncrementIfOdd, onIncrementAsync, onIncrementThunk, onIncrementEpic,
 };
 
 export default connect(
