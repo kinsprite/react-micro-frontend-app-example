@@ -10,13 +10,18 @@ import styles from './ExampleApp.module.css';
 import { CounterContainer } from './counter';
 
 function SubAppRouters() {
-  const apps = getRegister().getAppsByRoutes().filter((pair) => pair.app.render === 'app-example-sub');
+  const renderItems = getRegister().filterRenderItems('app-example-sub');
 
   return (
     <Switch>
-      {apps.map((pair) => (
-        <Route path={pair.route} key={pair.route}>
-          <AsyncApp appId={pair.app.id} routePath={pair.route} />
+      {renderItems.map((item) => (
+        <Route path={item.render.routePath} key={item.render.routePath}>
+          <AsyncApp
+            appId={item.app.id}
+            renderId={item.render.renderId}
+            routePath={item.render.routePath}
+            componentKey={item.render.componentKey}
+          />
         </Route>
       ))}
     </Switch>
@@ -44,6 +49,9 @@ function ExampleApp() : JSX.Element {
           <Link to="/app-example/sub">
             {'App Example\'s Sub'}
           </Link>
+        </li>
+        <li>
+          <Link to="/sub-at-root">Sub at Root</Link>
         </li>
       </ul>
       <CounterContainer />
