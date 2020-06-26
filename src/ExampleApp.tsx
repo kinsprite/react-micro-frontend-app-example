@@ -21,6 +21,7 @@ function SubAppRouters() {
             renderId={item.render.renderId}
             routePath={item.render.routePath}
             componentKey={item.render.componentKey}
+            disableRedirect
           />
         </Route>
       ))}
@@ -51,7 +52,7 @@ function ExampleApp() : JSX.Element {
           </Link>
         </li>
         <li>
-          <Link to="/sub-at-root">Sub at Root</Link>
+          <Link to="/app-example/echarts">Echarts from CDN</Link>
         </li>
       </ul>
       <CounterContainer />
