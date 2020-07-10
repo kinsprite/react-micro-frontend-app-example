@@ -8,5 +8,6 @@
 .linkList {
   position: absolute;
   top: 0;
-  right: 1rem;
+  right: 0.5rem;
+  padding-left: 0;
 }

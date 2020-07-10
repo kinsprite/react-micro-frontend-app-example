@@ -17,21 +17,18 @@ interface CounterProps {
 const Counter : React.FC<any> = ({
   counter, onIncrement, onIncrementAsync, onDecrement, onIncrementIfOdd, onIncrementThunk, onIncrementEpic,
 }: CounterProps) => (
-  <p>
+  <p className={styles.container}>
     Clicked:
     {' '}
     {counter}
     {' '}
     times
     <button type="button" className={styles.btn} onClick={onIncrement}>+</button>
-    {' '}
     <button type="button" className={styles.btn} onClick={onDecrement}>-</button>
-    {' '}
-    <button type="button" className={styles.btn} onClick={onIncrementIfOdd}>Increment if odd</button>
-    {' '}
-    <button type="button" className={styles.btn} onClick={onIncrementAsync}>Increment async</button>
-    <button type="button" className={styles.btn} onClick={onIncrementThunk}>Increment thunk</button>
-    <button type="button" className={styles.btn} onClick={onIncrementEpic}>Increment Epic</button>
+    <button type="button" className={`${styles.btn} ${styles.btnOdd}`} onClick={onIncrementIfOdd}>Increment if odd</button>
+    <button type="button" className={styles.btn} onClick={onIncrementAsync}>+2 Saga</button>
+    <button type="button" className={styles.btn} onClick={onIncrementThunk}>+1 Thunk</button>
+    <button type="button" className={styles.btn} onClick={onIncrementEpic}>+1 Epic</button>
   </p>
 );
 
